@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: white">
+    <button
+      style="background-color: black; color: white"
+      class="btn-dark"
+      onclick="handleClick()"
+    >
+      DarkMode
+    </button>
+    <button ondblclick="handleClick2()">First is a Bait dblClick Me 🎉</button>
+    <h1>Please Subscribe Our Channel Vishal Technical 🙌</h1>
+    <button class="btn-sub">Subscribe</button>
+    <script>
+      let body = document.body;
+      let subBtn = document.querySelector(".btn-sub");
+      let message = document.querySelector("h1");
+      let darkBtn = document.querySelector(".btn-dark");
+
+      subBtn.addEventListener("click", () => {
+        message.innerText = "Thank You for Subscribing 😊";
+        subBtn.innerText = "Subscribed ";
+      });
+      function handleClick() {
+        if (body.style.backgroundColor == "white") {
+          body.style.backgroundColor = "black";
+          darkBtn.style.backgroundColor = "white";
+          darkBtn.style.color = "black";
+          darkBtn.innerText = "LightMode";
+        } else {
+          body.style.backgroundColor = "white";
+          darkBtn.style.backgroundColor = "black";
+          darkBtn.style.color = "white";
+          darkBtn.innerText = "DarkMode";
+        }
+      }
+      function handleClick2() {
+        console.log("hehehehe! That was a Click Bait 😂😂");
+        body.style.backgroundColor = "white";
+      }
+    </script>
+  </body>
+</html>

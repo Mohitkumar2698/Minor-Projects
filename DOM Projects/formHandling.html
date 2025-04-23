@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <p>Name : <input type="text" id="name" required /></p>
+    <p>Email : <input type="email" id="email" required /></p>
+    <button id="submit">Submit</button>
+    <p id="result"></p>
+    <p id="realtime"></p>
+    <script>
+      let btn = document.querySelector("#submit");
+      let email = document.querySelector("#email");
+
+      email.addEventListener("keypress", (e) => {
+        let realtimeVal = document.querySelector("#realtime");
+        realtimeVal.innerHTML = e.target.value;
+      });
+
+      btn.addEventListener("click", () => {
+        let name = document.querySelector("#name").value;
+        let email = document.querySelector("#email").value;
+        let para = document.querySelector("#result");
+        para.innerHTML = `hey ${name} <br> logged In with email :- <br> ${email}`;
+      });
+    </script>
+  </body>
+</html>

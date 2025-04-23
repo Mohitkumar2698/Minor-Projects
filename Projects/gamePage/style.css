@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: linear-gradient(to bottom right, #6d9be0, #2a3469);
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+}
+.bubble1 {
+  background-image: linear-gradient(to right, #ffffff50, #ffffff00);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  height: 200px;
+  width: 180px;
+  border-radius: 50%;
+  position: absolute;
+  left: 10vw;
+  bottom: 5vh;
+  z-index: -1;
+}
+.bubble2 {
+  background-image: linear-gradient(to right, #ffffff50, #ffffff00);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  height: 200px;
+  width: 180px;
+  border-radius: 50%;
+  position: absolute;
+  right: 7vw;
+  top: 5vh;
+  z-index: -1;
+}
+
+.body {
+  height: 100vh;
+  width: 100vw;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* box */
+.box-div {
+  background-image: linear-gradient(to right, #ffffff50, #ffffff10);
+  backdrop-filter: blur(5px);
+  border-radius: 20px;
+  border: 1px solid rgba(227, 228, 237, 0.2);
+  /* padding: 2rem; */
+  height: 75vh;
+  width: 60vw;
+  display: flex;
+}
+/* Sidebar */
+.sidebar-div {
+  border: 1px solid rgba(227, 228, 237, 0.2);
+  /* background-color: rgba(227, 228, 237, 0.4); */
+  height: inherit;
+  width: 16vw;
+  text-align: center;
+  border-top-left-radius: inherit;
+  border-bottom-left-radius: inherit;
+}
+/* Logo */
+.logo-div {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+
+.logo-img {
+  height: 50px;
+  width: 50px;
+  margin-top: 3rem;
+  border-radius: 50%;
+}
+/* Social */
+.social-network-div {
+  margin-top: 2rem;
+  display: flex;
+  gap: 0.5rem;
+  margin-left: 1.5rem;
+}
+.icon {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  text-align: justify;
+}
+.title {
+  display: flex;
+  flex-direction: column;
+  gap: 1.3rem;
+  text-align: justify;
+  font-style: italic;
+}
+.icon {
+  font-size: 1.8rem;
+  color: #3e57c5be;
+}
+/* Poster */
+.poster-div {
+  margin-top: 2.5rem;
+  margin-left: 1.6rem;
+  background-image: url("/Assets/GAMEPAD-2.jpg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 12.5vh;
+  width: 11vw;
+  border-radius: 10px;
+}
+
+/* Game Tab */
+.gamer_tab-div {
+  text-align: justify;
+  margin-left: 2rem;
+  margin-top: 2.8rem;
+}
+.heading {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  color: rgba(0, 0, 0, 0.7);
+}
+.search-div {
+  /* background-color: #ffffff60; */
+  background-image: linear-gradient(to right, #ffffff60, #ffffff20);
+  border-radius: 30px;
+  width: 24vw;
+  height: 5.5vh;
+  display: flex;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.452);
+  gap: 6px;
+}
+.search-div i {
+  margin-top: 12px;
+}
+.search-bar {
+  background-color: #ffffff00;
+  width: 21vw;
+  height: 5.5vh;
+  border: none;
+  border-radius: 30px;
+  padding-left: 1rem;
+  font-size: 0.8rem;
+  color: rgba(0, 0, 0, 0.452);
+}
+
+/* Game Bars */
+.game-tab-div {
+  width: 30vw;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+.game-tab {
+  background-color: rgba(255, 255, 255, 0.4);
+  border-radius: 10px;
+  display: flex;
+  gap: 1rem;
+  padding: 0.5rem;
+  box-shadow: 2px 2px 6px 1px rgba(0, 0, 0, 0.5);
+}
+.img {
+  height: 3.8rem;
+  width: 3.3rem;
+  background-size: contain;
+  border-radius: 5px;
+  margin-top: 4px;
+  /* margin-left: 0.5rem; */
+}
+.game-info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  font-size: 0.6rem;
+  font-style: italic;
+  margin-top: 5px;
+}
+.game-info-div h3 {
+  font-size: 0.8rem;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+}
+.progress {
+  height: 1.8rem;
+  width: 17vw;
+  color: red;
+}

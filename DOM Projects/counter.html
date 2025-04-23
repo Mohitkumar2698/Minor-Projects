@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: black;
+        color: white;
+      }
+      .parent-div {
+        display: flex;
+        gap: 3.5rem;
+        width: 40vw;
+        justify-content: center;
+        border: 1px white solid;
+        padding: 1rem;
+        font-size: 2rem;
+      }
+      .btn {
+        font-size: 2rem;
+        background-color: inherit;
+        color: white;
+        border: none;
+        padding: 5px;
+      }
+      .btn:hover {
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent-div">
+      <button class="plus-btn btn">+</button>
+      <p>0</p>
+      <button class="minus-btn btn">-</button>
+    </div>
+    <script>
+      const plusButton = document.querySelector(".plus-btn");
+      const minusButton = document.querySelector(".minus-btn");
+      const p = document.querySelector("p");
+
+      let counter = 0;
+      plusButton.addEventListener("click", () => {
+        counter++;
+        p.innerText = counter;
+      });
+      minusButton.addEventListener("click", () => {
+        counter--;
+        p.innerText = counter - 1;
+      });
+    </script>
+  </body>
+</html>

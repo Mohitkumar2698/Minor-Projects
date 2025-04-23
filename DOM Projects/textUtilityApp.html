@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      .navbar {
+        background-color: cornflowerblue;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        font-size: 1.5rem;
+        color: white;
+      }
+
+      .navbar #mode-btn {
+        padding: 0.4rem 1.2rem;
+        font-size: 1rem;
+        background-color: bisque;
+        border: 0px solid black;
+      }
+      main {
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .main-div {
+        display: flex;
+        flex-direction: column;
+        gap: 0.2rem;
+        background-color: cornflowerblue;
+        padding: 2rem;
+      }
+      .divs-div {
+        display: flex;
+        gap: 0.2rem;
+      }
+      .output-div {
+        height: 50vh;
+        width: 35vw;
+        border: 1px solid white;
+        background-color: bisque;
+        padding: 0.2rem;
+      }
+      .letter-count-div {
+        height: 4rem;
+        width: 7rem;
+        border: 1px solid white;
+        padding: 0.2rem;
+        text-align: center;
+        color: white;
+      }
+      .letter-count-div span {
+        font-size: 2rem;
+        color: white;
+        margin-top: 0.5rem;
+      }
+      #input {
+        height: 5vh;
+        width: 35vw;
+        border: white 1px solid;
+        padding: 0.2rem;
+        font-size: 1rem;
+        background: bisque;
+        color: white;
+      }
+      .buttons-div {
+        display: grid;
+        grid-template-columns: repeat(4, 87.2px);
+        grid-template-rows: repeat(1, 50px);
+        gap: 0.2rem;
+      }
+      .buttons-div button {
+        background: inherit;
+        color: white;
+        border: 1px white solid;
+        font-size: 1.2rem;
+      }
+      #theme {
+        padding: 0.9rem;
+        font-size: 1.1rem;
+        background-color: bisque;
+        border: 0px solid white;
+      }
+    </style>
+  </head>
+  <body style="background-color: bisque">
+    <div class="navbar">
+      <p>Home</p>
+      <p>Text Utility App</p>
+      <button id="mode-btn">Mode</button>
+    </div>
+    <main>
+      <div class="main-div">
+        <div class="divs-div">
+          <div class="output-div"></div>
+          <div class="letter-count-div">
+            Letter Count :
+            <span id="count">0</span>
+          </div>
+        </div>
+        <div class="input-div">
+          <input type="text" id="input" placeholder="Enter Text" />
+        </div>
+        <div class="buttons-div">
+          <button id="upperCase">ABC</button>
+          <button id="lowerCase">abc</button>
+          <input id="theme" placeholder="Theme" />
+          <button id="reset">Reset</button>
+        </div>
+      </div>
+    </main>
+    <script>
+      const letterCount = document.querySelector("#count");
+      const inputField = document.querySelector("#input");
+      const buttonsList = document.querySelectorAll("button");
+      const outputField = document.querySelector(".output-div");
+      const upperCaseBtn = document.querySelector("#upperCase");
+      const lowerCaseBtn = document.querySelector("#lowerCase");
+      const themeBtn = document.querySelector("#theme");
+      const resetBtn = document.querySelector("#reset");
+      const modeBtn = document
+        .querySelector("#mode-btn")
+        .addEventListener("click", (e) => {
+          if (document.body.style.backgroundColor == "bisque") {
+            document.body.style.backgroundColor = "black";
+            e.target.innerHTML = "Light";
+          } else if (document.body.style.backgroundColor == "black") {
+            document.body.style.backgroundColor = "bisque";
+            e.target.innerHTML = "Dark";
+          }
+        });
+
+      inputField.addEventListener("input", (e) => {
+        let input = `${e.target.value}`;
+        upperCaseBtn.addEventListener("click", () => {
+          input = input.toUpperCase();
+          outputField.innerHTML = input;
+        });
+        lowerCaseBtn.addEventListener("click", () => {
+          input = input.toLowerCase();
+          outputField.innerHTML = input;
+        });
+        outputField.innerHTML = input;
+        letterCount.innerText = input.length;
+      });
+      themeBtn.addEventListener("change", (e) => {
+        outputField.style.backgroundColor =
+          `${e.target.value}`.toLocaleLowerCase();
+        if (outputField.style.backgroundColor == "black")
+          outputField.style.color = "white";
+        else if (outputField.style.backgroundColor == "white")
+          outputField.style.color = "black";
+      });
+      resetBtn.addEventListener("click", () => {
+        outputField.innerText = "";
+        letterCount.innerText = "0";
+        inputField.value = "";
+        outputField.style.backgroundColor = "bisque";
+        outputField.style.color = "black";
+      });
+    </script>
+  </body>
+</html>

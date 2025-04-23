@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+          "Lucida Sans", Arial, sans-serif;
+      }
+      body {
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        background-color: black;
+      }
+      .parent {
+        border-radius: 10px;
+        width: 50vw;
+        /* height: 60vh; */
+        background-color: whitesmoke;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        align-items: center;
+        gap: 1rem;
+        font-size: 1.7rem;
+        display: none;
+      }
+      .parent h5 {
+        color: rgba(255, 0, 0, 0.854);
+      }
+      form {
+        text-align: center;
+      }
+      .inputs {
+        height: 3em;
+        width: 17em;
+        padding: 0.2rem;
+        margin-bottom: 0.5rem;
+      }
+      .big-inputs {
+        height: 6em;
+      }
+      #file {
+        margin-left: 0.8rem;
+      }
+      .buttons {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+      }
+      .button {
+        background-color: rgba(211, 13, 13, 0.854);
+        padding: 0.5rem 2.1rem;
+        font-size: 0.8rem;
+        border: none;
+        color: white;
+        cursor: pointer;
+      }
+
+      /* Result */
+      .result-div{
+        background-color: cornsilk;
+        /* display: none; */
+      }
+    </style>
+  </head>
+  <body>
+    <div class="parent">
+      <h5>Create Your Resume</h5>
+      <form action="/">
+        <input type="text" placeholder="Full Name" id="Name" class="inputs" />
+        <input type="number" placeholder=Phone" id="Phone"class="inputs"/>
+        <input type="email" placeholder="Email" id="Email" class="inputs" />
+        <input
+          type="email"
+          placeholder="Profile Link"
+          id="links"
+          class="inputs"
+        />
+        <input
+          type="text"
+          placeholder="About"
+          id="About"
+          class="inputs big-inputs"
+        />
+        <input
+          type="email"
+          placeholder="Skills"
+          id="Skills"
+          class="inputs big-inputs"
+        />
+        <input
+          type="text"
+          placeholder="Experience(if any) "
+          id="Experience"
+          class="inputs big-inputs"
+        />
+        <input
+          type="text"
+          placeholder="Projects(if any) "
+          id="Projects"
+          class="inputs big-inputs"
+        />
+        <span style="font-size: 17px; font-family: serif"
+          >Choose Profile Picture :</span
+        >
+        <input type="file" id="file" />
+
+        <div class="buttons">
+          <input type="button" value="Submit" id="submit" class="button" />
+          <input type="button" value="Reset" id="reset" class="button" />
+        </div>
+      </form>
+    </div>
+    <div class="result-div">
+      
+    </div>
+    <script>
+      const Name = document.querySelector("#NNme");
+      const Phone = document.querySelector("#Phone");
+      const Email = document.querySelector("#Email");
+      const About = document.querySelector("#About");
+      const Skills = document.querySelector("#Skills");
+      const Experience = document.querySelector("#Experience");
+    </script>
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: cornflowerblue;
+    }
+    .parent {
+      width: 20vw;
+      height: 50vh;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+    }
+    input {
+      padding: 0.3rem;
+    }
+    .button-div {
+      display: grid;
+      grid-template-rows: repeat(1, 30px);
+      grid-template-columns: repeat(4, 30px);
+      gap: 1rem;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <h4>Show Password</h4>
+
+      <input type="text" placeholder="Enter Your Password" />
+      <button>Hide Password</button>
+      <input
+        type="text"
+        name=""
+        id="input-2"
+        placeholder="Enter Your Password"
+      />
+      <p></p>
+    </div>
+    <script>
+      const inputField = document.querySelector("input");
+      const inputField2 = document.querySelector("#input-2");
+      const passBtn = document.querySelector("button");
+      const para = document.querySelector("p");
+
+      passBtn.addEventListener("click", () => {
+        if (inputField.type == "text") {
+          inputField.type = "password";
+          passBtn.innerText = "Show Password";
+        } else {
+          inputField.type = "text";
+          passBtn.innerText = "Hide Password";
+        }
+      });
+      inputField2.addEventListener("keypress", (event) => {
+        para.innerText += event.key;
+      });
+    </script>
+  </body>
+</html>

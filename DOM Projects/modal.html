@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .parent-div {
+        display: flex;
+        flex-direction: column;
+      }
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        width: 100vw;
+        box-sizing: border-box;
+        background-color: black;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+      }
+      .modal {
+        height: 40vh;
+        width: 80vh;
+        border: 3px solid violet;
+        background-color: cornflowerblue;
+        color: white;
+        font-size: 1.2rem;
+        text-align: center;
+        display: none;
+        padding-top: 2rem;
+      }
+      .sub-btn {
+        padding: 1rem;
+        font-size: 1.2rem;
+        background-color: crimson;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+      .unSub-btn {
+        margin-top: 1.5rem;
+        padding: 0.5rem;
+        background-color: crimson;
+        color: white;
+        border: none;
+        cursor: pointer;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="sub-btn">Subscribe</button>
+    <div class="modal">
+      <p>Thanks to Subscribe Us 😊</p>
+      <button class="unSub-btn">unSubscribe</button>
+    </div>
+
+    <script>
+      const subBtn = document.querySelector(".sub-btn");
+      const unSubBtn = document.querySelector(".unSub-btn");
+      const modal = document.querySelector(".modal");
+      subBtn.addEventListener("click", () => {
+        subBtn.innerText = "unSubscribe";
+        subBtn.style.display = "none";
+        modal.style.display = "block";
+      });
+      unSubBtn.addEventListener("click", () => {
+        subBtn.innerText = "Subscribe";
+        modal.style.display = "none";
+        subBtn.style.display = "block";
+      });
+    </script>
+  </body>
+</html>

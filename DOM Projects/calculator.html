@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Calculator</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+        "Lucida Sans", Arial, sans-serif;
+    }
+    body {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: cornflowerblue;
+    }
+    .parent {
+      width: 20vw;
+      height: 50vh;
+      background-color: whitesmoke;
+      display: flex;
+      flex-direction: column;
+      padding: 1rem;
+      align-items: center;
+      gap: 1rem;
+      font-size: 1.5rem;
+    }
+    input {
+      padding: 0.3rem;
+    }
+    .button-div {
+      display: grid;
+      grid-template-rows: repeat(1, 30px);
+      grid-template-columns: repeat(4, 30px);
+      gap: 1rem;
+    }
+    button {
+      font-size: 1.2rem;
+    }
+    #result {
+      height: 6.5rem;
+      width: 10.5rem;
+      padding: 0.2rem;
+    }
+  </style>
+  <body>
+    <div class="parent">
+      <p>Calculator</p>
+      <input type="text" id="num1" placeholder="Enter First Num" />
+      <input type="text" id="num2" placeholder="Enter First Two" />
+      <div class="button-div">
+        <button id="plus-btn">+</button>
+        <button id="minus-btn">-</button>
+        <button id="divide-btn">%</button>
+        <button id="multiply-btn">X</button>
+      </div>
+      <div class="result-div">
+        <textarea id="result" placeholder="Result"></textarea>
+      </div>
+    </div>
+    <script>
+      let num1 = document.querySelector("#num1");
+      let num2 = document.querySelector("#num2");
+      let buttons = document.querySelectorAll("button");
+      let result = document.querySelector("#result");
+      buttons.forEach((btn) => {
+        btn.addEventListener("click", () => {
+          console.log("Event working");
+
+          switch (btn.innerText) {
+            case "+":
+              result.value = +num1.value + +num2.value;
+              break;
+            case "-":
+              result.value = +num1.value - +num2.value;
+              break;
+            case "/":
+              result.value = +num1.value / +num2.value;
+              break;
+            case "X":
+              result.value = +num1.value * +num2.value;
+              break;
+            default:
+              console.log("not working");
+
+              break;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>

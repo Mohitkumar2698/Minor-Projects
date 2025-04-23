@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 style="color: black">Color Box generator :-</h1>
+    <div class="parent-div">
+      <button class="btn">Generate Box</button>
+    </div>
+    <script>
+      const btn = document.querySelector(".btn");
+      let colors = "#";
+      const body = document.body;
+      let alpha = "";
+      let hexAlpha = "abcdef";
+      btn.addEventListener("click", () => {
+        for (i = 0; i < 6; i++) {
+          let randomIdx = Math.floor(Math.random() * 6);
+          colors += Math.floor(Math.random() * 9);
+          alpha += hexAlpha[randomIdx];
+          colors[randomIdx],
+            (hexAlpha[randomIdx] = hexAlpha[randomIdx]),
+            colors[randomIdx];
+        }
+        console.log(colors);
+        console.log(alpha);
+        body.style.backgroundColor = colors;
+        colors = "#";
+      });
+    </script>
+  </body>
+</html>

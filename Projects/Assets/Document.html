@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/amazon.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+  <style>
+    .navbar {
+      height: 50px;
+      background-color: rgb(0, 0, 0);
+      display: flex;
+      align-items: center;
+    }
+    a {
+      color: white;
+      margin-right: 100px;
+    }
+    .button {
+      background-color: rgb(228, 124, 6);
+    }
+    .logo {
+      color: rgb(255, 136, 1);
+    }
+    .content {
+      height: 500px;
+      width: 100px;
+      display: flex;
+    }
+    .box img {
+      height: 200px;
+      width: 100px;
+      padding-right: 10px;
+    }
+    .box2 img {
+      height: 200px;
+      width: 100px;
+      padding-right: 10px;
+    }
+    .box3 img {
+      height: 150px;
+      width: 100px;
+      padding-right: 10px;
+    }
+    .box4 img {
+      height: 150px;
+      width: 100px;
+      padding-right: 10px;
+    }
+    .box5 img {
+      height: 150px;
+      width: 100px;
+      padding-right: 10px;
+    }
+    .footer {
+      height: 150px;
+      width: 900px;
+      background-color: black;
+      color: white;
+      text-align: center;
+    }
+  </style></head>
+  
+  <body>
+    <div class="navbar">
+      <a class="logo">Amazon.in</a>
+      <a>Account</a>
+      <a>My cart</a>
+      <a>Contact us</a>
+      <input placeholder="search amazon.in">
+      <button>search</button>
+    </div>
+    <div class="content">
+      <div class="box"><img src="./Document_files/download (2).jpg"></div>
+      <div class="box2"><img src="./Document_files/download (1).jpg"></div>
+      <div class="box3"><img src="./Document_files/download (3).jpg"></div>
+      <div class="box4"><img src="./Document_files/download (4).jpg"></div>
+      <div class="box5"><img src="./Document_files/download (5).jpg"></div>
+    </div>
+    <div class="footer">
+      <h4>English</h4>
+      <h5>already a customer? Sign in</h5>
+      <pre>conditions of use    privacy notice   interest-based ads
+        1996-2025,Amazon.com,inc.and its affiliates
+      </pre>
+    </div>
+  <!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>
