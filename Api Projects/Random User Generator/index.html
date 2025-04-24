@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="profile-pic-div">
+      <img
+        src="/assets/hanma-tokyo-revengers.jpg"
+        alt="profile-pic"
+        id="pro-pic"
+      />
+    </div>
+    <div class="background-div"></div>
+    <div class="hero-section-div">
+      <span>RANDOM USER GENERATOR</span>
+      <p>
+        A free, open source API for generating random user data. like lorem
+        ipsum, but for people.
+      </p>
+      <p>API URL : https://randomuser.me/api/</p>
+      <div class="user-box-parent-div">
+        <div class="user-box-div-one"></div>
+        <div class="user-box-div-two">
+          <div class="result-div">
+            <p id="salutation-val">Hi, My name is</p>
+            <p id="name-val">Suzuki Hanma</p>
+          </div>
+          <div class="button-div">
+            <button class="buttons" id="name-btn">Name</button>
+            <button class="buttons" id="phone-btn">Phone</button>
+            <button class="buttons" id="emial-btn">Email</button>
+            <button class="buttons" id="address-btn">Address</button>
+            <button class="buttons" id="dob-btn">Birthday</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
