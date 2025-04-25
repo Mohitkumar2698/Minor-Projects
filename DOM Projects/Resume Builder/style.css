@@ -17,7 +17,7 @@
 }
 .body-div {
   height: 90vh;
-  padding: 2rem 8rem;
+  padding: 2rem 6rem;
   background-color: aliceblue;
 }
 form {
@@ -53,10 +53,10 @@ select {
   width: 30vw;
   height: 5vh;
 }
-#skills{
+#skills {
   width: 20vw;
 }
-#skill-btn{
+#skill-btn {
   font-size: 1.2rem;
   padding: 0.4rem 0.5rem;
 }
@@ -82,7 +82,7 @@ select {
 
 /* result Page */
 .result-div {
-  padding: 0rem 8rem;
+  padding: 0rem 6rem;
 }
 
 .resume-div {
@@ -102,6 +102,9 @@ select {
   width: 130px;
   border-radius: 50%;
 }
+form{
+  overflow: hidden;
+}
 .name-div {
   display: flex;
   justify-content: center;
@@ -115,7 +118,7 @@ select {
   display: flex;
   gap: 1rem;
   margin-top: 2rem;
-  margin-left: 0.7rem;
+  /* margin-left: 0.7rem; */
 }
 .left-section-div {
   display: flex;
@@ -124,7 +127,7 @@ select {
 }
 .left-middle-div {
   display: flex;
-  gap: 1.7rem;
+  gap: 1rem;
 }
 .left-headings .heading {
   margin-top: 0.5rem;
@@ -133,7 +136,7 @@ select {
 .left-values .values {
   color: rgba(0, 0, 0, 0.589);
   font-size: 0.8rem;
-  margin-top: 0.46rem;
+  margin-top: 0.45rem;
 }
 
 .left-lower-div {
