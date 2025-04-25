@@ -7,7 +7,7 @@
 body {
   position: relative;
   height: 100vh;
-  background-color:#f9f9f9;
+  background-color: #f9f9f9;
 }
 .background-div {
   height: 70vh;
@@ -56,15 +56,19 @@ body {
   background-color: #f9f9f9;
   margin-top: 10vh;
   border-bottom: 1px solid black;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
 }
 .user-box-div-two {
-  height: 40vh;
+  height: 45vh;
   width: 51vw;
   background-color: white;
   display: flex;
   flex-direction: column;
   border-top: none;
   /* gap: 2rem; */
+  /* border-bottom-left-radius: 10px; */
+  /* border-bottom-right-radius: 10px; */
 }
 .result-div {
   display: flex;
@@ -72,6 +76,7 @@ body {
   text-align: center;
   padding: 1rem;
   margin-top: 14vh;
+  gap: 0.2rem;
 }
 .result-div #name-val {
   color: black;
@@ -87,7 +92,7 @@ body {
   grid-template-columns: repeat(5, 100px);
   justify-content: center;
   gap: 1rem;
-  margin-top: 1rem;
+  margin-top: 1.6rem;
 }
 .buttons {
   background: none;
@@ -101,4 +106,20 @@ body {
 }
 .buttons:hover {
   color: black;
+}
+
+/* Add User Section */
+
+.separation {
+  margin-top: 1.5rem;
+}
+.add-user-div {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.add-user-box {
 }

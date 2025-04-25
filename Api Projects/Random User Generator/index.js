@@ -1,3 +1,5 @@
+let userBox = document.querySelector(".user-box-parent-div");
+let addUserDiv = document.querySelector(".add-user-div");
 let proPic = document.getElementById("pro-pic");
 let salutationVal = document.getElementById("salutation-val");
 let nameVal = document.getElementById("name-val");
@@ -7,6 +9,7 @@ let email = "suzukihanma43@gmail.com";
 let phone = "(91) 7973314896";
 let buttons = document.getElementsByClassName("buttons");
 let dob = "1989-10-24";
+let addUserBtn = document.getElementById("add-user");
 
 async function apiFetch() {
   try {
@@ -27,7 +30,7 @@ async function apiFetch() {
     console.log(error);
   }
 }
-apiFetch();
+// apiFetch();
 for (let btn of buttons) {
   btn.addEventListener("mouseover", () => {
     switch (btn.innerHTML) {
@@ -57,3 +60,29 @@ for (let btn of buttons) {
     }
   });
 }
+
+// Add New User By Local Api
+async function addUserApi() {
+  let localApiData = await fetch("./testApi.json");
+  let localData = await localApiData.json();
+  localData.users.map((obj) => {
+    let newUserElement = document.createElement("div");
+    newUserElement.classList.add("add-user-box");
+    newUserElement.styles = `
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    display: flex;
+    flex-direction: column;
+    gap: 10rem;
+    text-align: center;`;
+    newUserElement.innerHTML = `<p>Name : ${obj.name}</p><p>Phone : ${obj.phone}</p>
+    <p>Email : ${obj.email}</p> <p>Address : ${obj.address}</p> <p>Birthday : ${obj.dob}</p>`;
+    addUserDiv.innerHTML += newUserElement.innerHTML;
+    console.log(newUserElement);
+  });
+}
+addUserBtn.addEventListener("click", () => {
+  addUserApi();
+});

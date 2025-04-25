@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Ubuntu, sans-serif;
+  /* font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+  scrollbar-width: none;
+}
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  padding: 0em 15vw;
+  font-size: 2.5rem;
+  background-color: darkolivegreen;
+  color: white;
+  letter-spacing: 1px;
+}
+.search-bar-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+}
+.search-bar-div #search-bar {
+  height: 5vh;
+  width: 30vw;
+  border: none;
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.search-bar-div #search-btn {
+  height: 5vh;
+  border: none;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 0rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+main {
+  background-color: floralwhite;
+  height: max-content;
+  padding: 1rem 5.9rem;
+}
+.movie-list-div {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.movie-box-div {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  background-color: darkolivegreen;
+  color: white;
+  gap: 0.5rem;
+  font-size: 1.2rem;
+  /* width: 17.6vw; */
+  width: min-content;
+}
+.movie-box-div #poster {
+  height: 15rem;
+  width: 15rem;
+}
+
+.movie-box-div #desc {
+  font-size: 0.7em;
+  text-align: justify;
+}

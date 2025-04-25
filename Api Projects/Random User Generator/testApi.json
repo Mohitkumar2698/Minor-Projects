@@ -1,0 +1,32 @@
+{
+    "users":[
+    {
+      "name": "Satoru Gojo",
+      "phone": "(91) 7483927397",
+      "address": "Tokyo, Japan",
+      "dob": "1984-20-09",
+      "email": "limitlessgojo00@gmail.com"
+    },
+    {
+      "name": "Sasuke Uchiha",
+      "phone": "(91) 6474648364",
+      "address": "Shanghai, Japan",
+      "dob": "1944-24-01",
+      "email": "lastuchiha0@gmail.com"
+    },
+    {
+      "name": "Hacker Uchiha",
+      "phone": "(00) 0000000000",
+      "address": "Unknown",
+      "dob": "No Data",
+      "email": "No Data"
+    },
+    {
+      "name": "Sosuke Aizen",
+      "phone": "(91) 84739373393",
+      "address": "Soul Society, Heaven",
+      "dob": "1900-20-03",
+      "email": "aizensosuke@gmail.com"
+    }
+  ]
+}

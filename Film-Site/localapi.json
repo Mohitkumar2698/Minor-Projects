@@ -1,0 +1,64 @@
+{
+    "data":[
+        {
+            "poster": "./assets/img1.jpg",
+            "name": "Queen of Tears",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam"
+        },
+        {
+            "poster": "./assets/img2.jpg",
+            "name": "Bloodhounds",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img3.jpg",
+            "name": "Heirs",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img4.jpg",
+            "name": "Vincenzo",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img5.jpg",
+            "name": "Sweet Home",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img6.jpg",
+            "name": "Squid Game",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img7.jpg",
+            "name": "True Beauty",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img8.jpg",
+            "name": "Extraordinary You",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img9.jpg",
+            "name": "My Name",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img10.jpg",
+            "name": "Gangnam Beauty",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img11.jpg",
+            "name": "The K2",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        },
+        {
+            "poster": "./assets/img12.jpg",
+            "name": "Suspicius Partner",
+            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
+        }
+    ]
+}
