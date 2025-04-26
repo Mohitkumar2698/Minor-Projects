@@ -13,20 +13,22 @@
           "Lucida Sans", Arial, sans-serif;
       }
       .navbar {
-        background-color: cornflowerblue;
+        background-color: #2563eb;
         height: 10vh;
         display: flex;
         align-items: center;
         justify-content: space-around;
-        font-size: 1.5rem;
+        font-size: 2rem;
         color: white;
       }
 
       .navbar #mode-btn {
         padding: 0.4rem 1.2rem;
-        font-size: 1rem;
-        background-color: bisque;
+        font-size: 1.3rem;
+        background-color: #f9f9f9;
         border: 0px solid black;
+        border-radius: 5px;
+        cursor: pointer;
       }
       main {
         height: 90vh;
@@ -38,8 +40,10 @@
         display: flex;
         flex-direction: column;
         gap: 0.2rem;
-        background-color: cornflowerblue;
+        background-color: #2563eb;
         padding: 2rem;
+        border-radius: 10px;
+
       }
       .divs-div {
         display: flex;
@@ -49,8 +53,9 @@
         height: 50vh;
         width: 35vw;
         border: 1px solid white;
-        background-color: bisque;
+        background-color: #fff;
         padding: 0.2rem;
+
       }
       .letter-count-div {
         height: 4rem;
@@ -62,7 +67,7 @@
       }
       .letter-count-div span {
         font-size: 2rem;
-        color: white;
+        color: #2d2d2d;
         margin-top: 0.5rem;
       }
       #input {
@@ -71,12 +76,12 @@
         border: white 1px solid;
         padding: 0.2rem;
         font-size: 1rem;
-        background: bisque;
-        color: white;
+        background: #fff;
+        color: black;
       }
       .buttons-div {
         display: grid;
-        grid-template-columns: repeat(4, 87.2px);
+        grid-template-columns: repeat(4, 117px);
         grid-template-rows: repeat(1, 50px);
         gap: 0.2rem;
       }
@@ -89,12 +94,11 @@
       #theme {
         padding: 0.9rem;
         font-size: 1.1rem;
-        background-color: bisque;
-        border: 0px solid white;
+        border: 1px solid white;
       }
     </style>
   </head>
-  <body style="background-color: bisque">
+  <body style="background-color: white">
     <div class="navbar">
       <p>Home</p>
       <p>Text Utility App</p>
@@ -132,11 +136,11 @@
       const modeBtn = document
         .querySelector("#mode-btn")
         .addEventListener("click", (e) => {
-          if (document.body.style.backgroundColor == "bisque") {
+          if (document.body.style.backgroundColor == "white") {
             document.body.style.backgroundColor = "black";
             e.target.innerHTML = "Light";
           } else if (document.body.style.backgroundColor == "black") {
-            document.body.style.backgroundColor = "bisque";
+            document.body.style.backgroundColor = "white";
             e.target.innerHTML = "Dark";
           }
         });

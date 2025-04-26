@@ -52,7 +52,61 @@
           />
           <div class="big-info-div">
             <fieldset>
-              <legend>EDUCATION</legend>
+              <legend>10TH's</legend>
+              <input
+                type="text"
+                id="school-10"
+                class="inputs"
+                placeholder="Enter Your School"
+              />
+              <input
+                type="text"
+                id="marks-10"
+                class="inputs"
+                placeholder="Enter Your Marks"
+              />
+              <input
+                type="text"
+                id="persent-10"
+                class="inputs"
+                placeholder="Enter Your Percentage"
+              />
+              <input
+                type="text"
+                id="year-10"
+                class="inputs"
+                placeholder="Enter Your Graduation Year"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>12TH's</legend>
+              <input
+                type="text"
+                id="school-12"
+                class="inputs"
+                placeholder="Enter Your School"
+              />
+              <input
+                type="text"
+                id="marks-12"
+                class="inputs"
+                placeholder="Enter Your Marks"
+              />
+              <input
+                type="text"
+                id="persent-12"
+                class="inputs"
+                placeholder="Enter Your Percentage"
+              />
+              <input
+                type="text"
+                id="year-12"
+                class="inputs"
+                placeholder="Enter Your Graduation Year"
+              />
+            </fieldset>
+            <fieldset>
+              <legend>Graduation</legend>
               <input
                 type="text"
                 id="institution"
@@ -78,15 +132,74 @@
                 placeholder="Enter Your Graduation Year"
               />
             </fieldset>
-            <fieldset style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+            <fieldset>
+              <legend>Post Graduation (if any)</legend>
+              <input
+                type="text"
+                id="institution-post"
+                class="inputs"
+                placeholder="Enter Your Institution"
+              />
+              <input
+                type="text"
+                id="course-post"
+                class="inputs"
+                placeholder="Enter Your Course"
+              />
+              <input
+                type="text"
+                id="marks-post"
+                class="inputs"
+                placeholder="Enter Your Graduation Marks"
+              />
+              <input
+                type="text"
+                id="year-post"
+                class="inputs"
+                placeholder="Enter Your Graduation Year"
+              />
+            </fieldset>
+            <fieldset>
               <legend>SKILLS</legend>
               <input
                 type="text"
                 id="skills"
-                class="inputs"
+                class="inputs skills"
                 placeholder="Enter Skill"
               />
               <input type="button" value="+" id="skill-btn" />
+            </fieldset>
+            <fieldset>
+              <legend>EXPERIENCE</legend>
+              <select name="exp" id="exp" class="inputs">
+                <option value="default">Select Your Experience</option>
+                <option value="Fresher">Fresher</option>
+                <option value="1 Year">1 Year</option>
+                <option value="5 Year">5 Year</option>
+                <option value="10 Year">10 Year</option>
+              </select>
+              <input
+                type="text"
+                id="company"
+                class="inputs"
+                placeholder="Enter Company"
+                style="display: none"
+              />
+              <input
+                type="text"
+                id="role"
+                class="inputs"
+                placeholder="Enter Role"
+                style="display: none"
+              />
+              
+              <input
+                type="text"
+                id="date"
+                class="inputs"
+                placeholder="Enter Date"
+                style="display: none"
+              />
             </fieldset>
           </div>
           <fieldset>
@@ -98,34 +211,7 @@
               name="Enter Your Profile Link"
             />
           </fieldset>
-          <fieldset>
-            <legend>EXPERIENCE</legend>
-            <select name="exp" id="exp" class="inputs">
-              <option value="default">Select Your Experience</option>
-              <option value="Fresher">Fresher</option>
-              <option value="1 Year">1 Year</option>
-              <option value="5 Year">5 Year</option>
-              <option value="10 Year">10 Year</option>
-            </select>
-            <input
-              type="text"
-              id="company"
-              class="inputs"
-              placeholder="Enter Company"
-            />
-            <input
-              type="text"
-              id="role"
-              class="inputs"
-              placeholder="Enter Role"
-            />
-            <input
-              type="text"
-              id="date"
-              class="inputs"
-              placeholder="Enter Date"
-            />
-          </fieldset>
+
           <div class="submit-div">
             <input type="submit" id="submit" value="Submit" class="buttons" />
             <input type="reset" id="reset" value="Reset" class="buttons" />

@@ -115,11 +115,48 @@ body {
 }
 .add-user-div {
   padding: 2rem;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 30vw);
+  justify-content: space-evenly;
   gap: 1rem;
   flex-wrap: wrap;
 }
-
 .add-user-box {
+  display: flex;
+  border: 1px solid #999;
+  border-radius: 20px;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+.add-user-box:hover {
+  scale: 1.03;
+  box-shadow: 10px 10px#999;
+}
+.add-user-box .photo-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: fit-content;
+  width: fit-content;
+}
+.add-user-box img {
+  background-size: contain;
+  height: 140px;
+  width: 140px;
+  border-radius: 20px;
+}
+.info-div {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+}
+.info-div h3 {
+  font-size: 1.9rem;
+}
+.info-div p {
+  color: #999;
+  font-size: 0.95rem;
 }

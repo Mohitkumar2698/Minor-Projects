@@ -2,6 +2,7 @@
     "users":[
     {
       "name": "Satoru Gojo",
+      "image": "./assets/g.jpg",
       "phone": "(91) 7483927397",
       "address": "Tokyo, Japan",
       "dob": "1984-20-09",
@@ -9,6 +10,7 @@
     },
     {
       "name": "Sasuke Uchiha",
+      "image": "./assets/mikey.jpg",
       "phone": "(91) 6474648364",
       "address": "Shanghai, Japan",
       "dob": "1944-24-01",
@@ -16,6 +18,7 @@
     },
     {
       "name": "Hacker Uchiha",
+      "image": "./assets/hackerUchiha.jpg",
       "phone": "(00) 0000000000",
       "address": "Unknown",
       "dob": "No Data",
@@ -23,10 +26,27 @@
     },
     {
       "name": "Sosuke Aizen",
+      "image": "./assets/aizen.jpg",
       "phone": "(91) 84739373393",
       "address": "Soul Society, Heaven",
       "dob": "1900-20-03",
       "email": "aizensosuke@gmail.com"
+    },
+    {
+      "name": "Goku",
+      "image": "./assets/goku.jpg",
+      "phone": "(91) 6373638367",
+      "address": "Planet Earth, Space",
+      "dob": "1977-22-03",
+      "email": "gokulove@gmail.com"
+    },
+    {
+      "name": "Pro_Coder",
+      "image": "./assets/myPic.jpg",
+      "phone": "(91) 7973563637",
+      "address": "Chandigarh, India",
+      "dob": "2002-12-05",
+      "email": "cute_programmer76@gmail.com"
     }
   ]
 }

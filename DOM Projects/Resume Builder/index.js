@@ -5,37 +5,67 @@ let phone = document.getElementById("phone");
 let email = document.getElementById("email");
 let profile = document.getElementById("profile");
 let place = document.getElementById("location");
+let profilePic = document.getElementById("picture");
+
+// Education :
+
+// 10th
+let school10 = document.getElementById("school-10");
+let marks10 = document.getElementById("marks-10");
+let percent10 = document.getElementById("persent-10");
+let year10 = document.getElementById("year-10");
+// 12th
+let school12 = document.getElementById("school-12");
+let marks12 = document.getElementById("marks-12");
+let percent12 = document.getElementById("persent-12");
+let year12 = document.getElementById("year-12");
+// Graduation
 let institution = document.getElementById("institution");
 let course = document.getElementById("course");
 let marks = document.getElementById("marks");
 let year = document.getElementById("year");
+// Post Graduation
+let institutionPost = document.getElementById("institution-post");
+let coursePost = document.getElementById("course-post");
+let marksPost = document.getElementById("marks-post");
+let yearPost = document.getElementById("year-post");
+// Experience
 let exp = document.getElementById("exp");
 let company = document.getElementById("company");
 let role = document.getElementById("role");
 let date = document.getElementById("date");
+// Profile Pic
 let picture = document.getElementById("picture");
-let skills = document.getElementById("skills");
-let allInput = document.getElementsByClassName("inputs");
+// Skills
+let skills = document.getElementsByClassName("skills");
+let skillArray = [];
+// skillArray.push(skills.value);
+
 // Buttons
 let skillBtn = document.getElementById("skill-btn");
 let submit = document.getElementById("submit");
 let reset = document.getElementById("reset");
-
 skillBtn.addEventListener("click", (e) => {
   let newInput = document.createElement("input");
   newInput.setAttribute("id", "skills");
-  newInput.classList.add("inputs");
+  newInput.classList.add("inputs", "skills");
   newInput.placeholder = "Enter Skill";
-  if (!skills.value) {
-    skills.placeholder = "Enter here First";
-  } else skillBtn.before(newInput);
+  skillBtn.before(newInput);
 });
 
+exp.addEventListener("click", () => {
+  if (exp.value !== "Fresher" && exp.value != "default") {
+    company.style.display = "block";
+    role.style.display = "block";
+    date.style.display = "block";
+  }
+});
 // form
 let form = document.getElementById("form");
-
 form.addEventListener("submit", (e) => {
   e.preventDefault();
+  for (const skill of skills) skillArray.push(` ${skill.value}`);
+  console.log(profilePic.files);
   console.log("Getting Data...");
   document.body.innerHTML = `<div class="navbar-div"><p>Resume Builder</p></div>
     <div class="body-div">
@@ -43,7 +73,9 @@ form.addEventListener("submit", (e) => {
         <div class="resume-div">
           <div class="upper-section-div">
             <div class="photo-div">
-              <img src="./assets/strong2.jpg" id="image-val" />
+              <img src="${
+                profilePic.value ? profilePic.value : "./assets/strong2.jpg"
+              }" id="image-val" />
             </div>
             <div class="name-div">
               <p id="name-val">${formName.value}</p>
@@ -70,12 +102,40 @@ form.addEventListener("submit", (e) => {
                 <div class="education-div left-divs">
                   <div class="heading-div">EDUCATION</div>
                   <div class="desc-div">
+                    <p class="heading" id="course-val">Middle School</p>
+                    <p class="values" id="marks-val">${marks10.value} | ${
+    percent10.value
+  }</p>
+                    <p class="values" id="institution-val">
+                      ${school10.value}
+                    </p>
+                    <p class="values" id="year-val">${year10.value}</p>
+                  </div>
+                  <div class="desc-div">
+                    <p class="heading" id="course-val">High School</p>
+                    <p class="values" id="marks-val">${marks12.value} | ${
+    percent12.value
+  }</p>
+                    <p class="values" id="institution-val">
+                      ${school12.value}
+                    </p>
+                    <p class="values" id="year-val">${year12.value}</p>
+                  </div>
+                  <div class="desc-div">
                     <p class="heading" id="course-val">${course.value}</p>
                     <p class="values" id="marks-val">${marks.value}</p>
                     <p class="values" id="institution-val">
                       ${institution.value}
                     </p>
                     <p class="values" id="year-val">${year.value}</p>
+                  </div>
+                  <div class="desc-div">
+                    <p class="heading" id="course-val">${coursePost.value}</p>
+                    <p class="values" id="marks-val">${marksPost.value}</p>
+                    <p class="values" id="institution-val">
+                      ${institutionPost.value}
+                    </p>
+                    <p class="values" id="year-val">${yearPost.value}</p>
                   </div>
                 </div>
                 <div class="reffrence-div">
@@ -98,15 +158,16 @@ form.addEventListener("submit", (e) => {
               </div>
               <div class="exp-div right-divs">
                 <p class="right-head">EXPERIENCE</p>
-                <p class="heading" id="role-val">${role.value}</p>
+                <p class="heading" id="role-val">${role.value} | ${
+    company.value
+  }</p>
                 <p class="right-desc" id="exp-val">${exp.value}</p>
-                <p class="right-desc" id="comp-val">${company.value}</p>
                 <p class="right-desc" id="date-val">${date.value}</p>
               </div>
               <div class="skills-div right-divs">
                 <p class="right-head">SKILLS</p>
                 <p class="right-desc" id="skill-val">
-                ${skills.value}
+                ${skillArray.join().toUpperCase()}
                 </p>
               </div>
               <div class="projects-div right-divs">
@@ -122,5 +183,11 @@ form.addEventListener("submit", (e) => {
           </div>
         </div>
       </div>
+      <button id="print-btn">Print</button>
     </div>`;
+  const printBtn = document
+    .getElementById("print-btn")
+    .addEventListener("click", () => {
+      window.print();
+    });
 });

@@ -65,23 +65,26 @@ for (let btn of buttons) {
 async function addUserApi() {
   let localApiData = await fetch("./testApi.json");
   let localData = await localApiData.json();
-  localData.users.map((obj) => {
-    let newUserElement = document.createElement("div");
-    newUserElement.classList.add("add-user-box");
-    newUserElement.styles = `
-    padding: 1rem;
-    border: 1px solid black;
-    border-radius: 10px;
-    background-color: #f9f9f9;
-    display: flex;
-    flex-direction: column;
-    gap: 10rem;
-    text-align: center;`;
-    newUserElement.innerHTML = `<p>Name : ${obj.name}</p><p>Phone : ${obj.phone}</p>
-    <p>Email : ${obj.email}</p> <p>Address : ${obj.address}</p> <p>Birthday : ${obj.dob}</p>`;
-    addUserDiv.innerHTML += newUserElement.innerHTML;
-    console.log(newUserElement);
+
+  let addUserBox = document.createElement("div");
+  addUserBtn.style.display = "none";
+  await localData.users.map((user) => {
+    addUserDiv.innerHTML += `
+    <div class="add-user-box">
+    <div class="photo-div"><img src=${user.image} alt="photo" /></div>
+    <div class="info-div">
+      <h3>${user.name}</h3>
+      <p>${user.phone}</p>
+      <p>${user.email}</p>
+      <p>${user.address}</p>
+      <p>${user.dob}</p>
+    </div>
+    </div>
+    `;
   });
+  addUserDiv.innerHTML += `
+      <button id="add-user" class="buttons">Generate users +</button>
+    `;
 }
 addUserBtn.addEventListener("click", () => {
   addUserApi();
