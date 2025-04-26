@@ -1,64 +1,100 @@
 {
-    "data":[
-        {
-            "poster": "./assets/img1.jpg",
-            "name": "Queen of Tears",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam"
-        },
-        {
-            "poster": "./assets/img2.jpg",
-            "name": "Bloodhounds",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img3.jpg",
-            "name": "Heirs",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque, ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img4.jpg",
-            "name": "Vincenzo",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img5.jpg",
-            "name": "Sweet Home",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img6.jpg",
-            "name": "Squid Game",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img7.jpg",
-            "name": "True Beauty",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img8.jpg",
-            "name": "Extraordinary You",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img9.jpg",
-            "name": "My Name",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img10.jpg",
-            "name": "Gangnam Beauty",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img11.jpg",
-            "name": "The K2",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        },
-        {
-            "poster": "./assets/img12.jpg",
-            "name": "Suspicius Partner",
-            "desc": " Lorem ipsum dolor sit, amet consectetur adipisicing elit. Itaque,ratione quibusdam sit veritatis repellat odio praesentium aperiam,"
-        }
-    ]
+  "movies": [
+    {
+      "title": "The Shawshank Redemption",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/8/81/ShawshankRedemptionMoviePoster.jpg",
+      "rating": 9.3,
+      "synopsis": "Two imprisoned men bond over years, finding solace and redemption through acts of decency.",
+      "genre": ["Drama"],
+      "release_year": 1994
+    },
+    {
+      "title": "Inception",
+      "poster_url": "https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_FMjpg_UX1000_.jpg",
+      "rating": 8.8,
+      "synopsis": "A thief uses dream-sharing technology to plant an idea in a CEO's mind.",
+      "genre": ["Sci-Fi", "Action"],
+      "release_year": 2010
+    },
+    {
+      "title": "Parasite",
+      "poster_url": "https://image.tmdb.org/t/p/original/7IiTTgloJzvGI1TAYymCfbfl3vT.jpg",
+      "rating": 8.6,
+      "synopsis": "A poor family infiltrates a wealthy household, exposing class divides.",
+      "genre": ["Thriller", "Dark Comedy"],
+      "release_year": 2019
+    },
+    {
+      "title": "The Dark Knight",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/1/1c/The_Dark_Knight_%282008_film%29.jpg",
+      "rating": 9.0,
+      "synopsis": "Batman faces the Joker in a battle for Gotham's soul.",
+      "genre": ["Action", "Crime"],
+      "release_year": 2008
+    },
+    {
+      "title": "Pulp Fiction",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/3/3b/Pulp_Fiction_%281994%29_poster.jpg",
+      "rating": 8.9,
+      "synopsis": "Interconnected stories of crime and redemption in Los Angeles.",
+      "genre": ["Crime", "Drama"],
+      "release_year": 1994
+    },
+    {
+      "title": "Titanic",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/1/18/Titanic_%281997_film%29_poster.png",
+      "rating": 7.9,
+      "synopsis": "A tragic love story aboard the ill-fated RMS Titanic.",
+      "genre": ["Romance", "Drama"],
+      "release_year": 1997
+    },
+    {
+      "title": "Jurassic Park",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/e/e7/Jurassic_Park_poster.jpg",
+      "rating": 8.2,
+      "synopsis": "A theme park with cloned dinosaurs turns deadly.",
+      "genre": ["Adventure", "Sci-Fi"],
+      "release_year": 1993
+    },
+    {
+      "title": "Avengers: Endgame",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/0/0d/Avengers_Endgame_poster.jpg",
+      "rating": 8.4,
+      "synopsis": "The Avengers fight to reverse Thanos' snap and restore the universe.",
+      "genre": ["Action", "Superhero"],
+      "release_year": 2019
+    },
+    {
+      "title": "The Matrix",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/c/c1/The_Matrix_Poster.jpg",
+      "rating": 8.7,
+      "synopsis": "A hacker discovers humanity is trapped in a simulated reality.",
+      "genre": ["Sci-Fi", "Action"],
+      "release_year": 1999
+    },
+    {
+      "title": "Forrest Gump",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/6/67/Forrest_Gump_poster.jpg",
+      "rating": 8.8,
+      "synopsis": "A man with a low IQ witnesses and influences key historical events.",
+      "genre": ["Drama", "Romance"],
+      "release_year": 1994
+    },
+    {
+      "title": "Gladiator",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/8/8d/Gladiator_%282000_film_poster%29.png",
+      "rating": 8.5,
+      "synopsis": "A betrayed Roman general seeks revenge as a gladiator.",
+      "genre": ["Action", "Drama"],
+      "release_year": 2000
+    },
+    {
+      "title": "Interstellar",
+      "poster_url": "https://upload.wikimedia.org/wikipedia/en/b/bc/Interstellar_film_poster.jpg",
+      "rating": 8.7,
+      "synopsis": "Astronauts travel through a wormhole to save humanity.",
+      "genre": ["Sci-Fi", "Adventure"],
+      "release_year": 2014
+    }
+  ]
 }

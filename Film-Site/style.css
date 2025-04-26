@@ -43,9 +43,9 @@
   cursor: pointer;
 }
 main {
-  background-color: floralwhite;
+  background-color: bisque;
   height: max-content;
-  padding: 1rem 5.9rem;
+  padding: 2rem 5.9rem;
 }
 .movie-list-div {
   display: flex;
@@ -56,19 +56,35 @@ main {
   display: flex;
   flex-direction: column;
   padding: 1rem;
-  background-color: darkolivegreen;
-  color: white;
-  gap: 0.5rem;
-  font-size: 1.2rem;
-  /* width: 17.6vw; */
+  background-color: white;
+  color: black;
+  gap: 0.3rem;
+  font-size: 0.8em;
+  /*width: 17.6vw;
+  */
   width: min-content;
+  cursor: pointer;
+  transition: scale 0.2s ease-in-out;
+  -webkit-transition: scale 0.2s ease-in-out;
+  -moz-transition: scale 0.2s ease-in-out;
+  -ms-transition: scale 0.2s ease-in-out;
+  -o-transition: scale 0.2s ease-in-out;
+}
+.movie-box-div:hover {
+  scale: 0.9;
 }
 .movie-box-div #poster {
-  height: 15rem;
+  height: 17rem;
   width: 15rem;
 }
-
+.movie-box-div #title {
+  font-size: 1.4rem;
+}
 .movie-box-div #desc {
-  font-size: 0.7em;
   text-align: justify;
+  padding: 1px;
+}
+.span {
+  display: flex;
+  gap: 0.5rem;
 }
