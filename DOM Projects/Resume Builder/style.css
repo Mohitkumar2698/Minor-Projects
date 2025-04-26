@@ -2,18 +2,20 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scrollbar-width: none;
+}
+:root {
+  --background-color: #2a5c82;
+  --text-color: #4a5568;
 }
 .navbar-div {
   height: 10vh;
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  font-size: 2rem;
-  background: linear-gradient(
-    to right,
-    rgb(177, 22, 22),
-    rgba(241, 59, 59, 0.212)
-  );
+  font-size: 3rem;
+  background-color: var(--background-color);
+  color: white;
 }
 .body-div {
   height: 90vh;
@@ -27,6 +29,12 @@ form {
   flex-direction: column;
   gap: 0.7rem;
   border: 1px solid black;
+}
+form .main-heading {
+  font-size: 2.5rem;
+  font-family: Ubuntu, sans-serif;
+  margin-left: 26vw;
+  color: var(--background-color);
 }
 .inputs {
   height: 6vh;
@@ -102,7 +110,7 @@ select {
   width: 130px;
   border-radius: 50%;
 }
-form{
+form {
   overflow: hidden;
 }
 .name-div {
