@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Resume Builder</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="index.js" defer></script>
+  </head>
+  <body>
+    <div class="navbar-div"><p>Resume Builder</p></div>
+    <div class="body-div">
+      <div class="form-div">
+        <form id="form">
+          <input
+            type="text"
+            id="name"
+            class="inputs"
+            placeholder="Enter Your Name"
+          />
+          <textarea
+            class="inputs"
+            name="intro"
+            id="intro"
+            placeholder="Introduction"
+            style="user-select: none"
+          ></textarea>
+          <input
+            type="number"
+            id="phone"
+            class="inputs"
+            placeholder="Enter Your Phone"
+          />
+          <input
+            type="text"
+            id="email"
+            class="inputs"
+            placeholder="Enter Your Email"
+          />
+          <input
+            type="text"
+            id="profile"
+            class="inputs"
+            placeholder="Enter Your Portfolio Link"
+          />
+          <input
+            type="text"
+            id="location"
+            class="inputs"
+            placeholder="Enter Your Current Location"
+          />
+          <div class="big-info-div">
+            <fieldset>
+              <legend>EDUCATION</legend>
+              <input
+                type="text"
+                id="institution"
+                class="inputs"
+                placeholder="Enter Your Institution"
+              />
+              <input
+                type="text"
+                id="course"
+                class="inputs"
+                placeholder="Enter Your Course"
+              />
+              <input
+                type="text"
+                id="marks"
+                class="inputs"
+                placeholder="Enter Your Graduation Marks"
+              />
+              <input
+                type="text"
+                id="year"
+                class="inputs"
+                placeholder="Enter Your Graduation Year"
+              />
+            </fieldset>
+            <fieldset style="display: flex; gap: 0.5rem; flex-wrap: wrap">
+              <legend>SKILLS</legend>
+              <input
+                type="text"
+                id="skills"
+                class="inputs"
+                placeholder="Enter Skill"
+              />
+              <input type="button" value="+" id="skill-btn" />
+            </fieldset>
+          </div>
+          <fieldset>
+            <legend>PICTURE</legend>
+            <input
+              type="file"
+              id="picture"
+              class="inputs"
+              name="Enter Your Profile Link"
+            />
+          </fieldset>
+          <fieldset>
+            <legend>EXPERIENCE</legend>
+            <select name="exp" id="exp" class="inputs">
+              <option value="default">Select Your Experience</option>
+              <option value="Fresher">Fresher</option>
+              <option value="1 Year">1 Year</option>
+              <option value="5 Year">5 Year</option>
+              <option value="10 Year">10 Year</option>
+            </select>
+            <input
+              type="text"
+              id="company"
+              class="inputs"
+              placeholder="Enter Company"
+            />
+            <input
+              type="text"
+              id="role"
+              class="inputs"
+              placeholder="Enter Role"
+            />
+            <input
+              type="text"
+              id="date"
+              class="inputs"
+              placeholder="Enter Date"
+            />
+          </fieldset>
+          <div class="submit-div">
+            <input type="submit" id="submit" value="Submit" class="buttons" />
+            <input type="reset" id="reset" value="Reset" class="buttons" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
