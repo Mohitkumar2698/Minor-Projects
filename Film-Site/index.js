@@ -57,6 +57,6 @@ const searchFilmBySearchBar = async () => {
     }
   }
 };
-// searchBar.addEventListener("input", () => {
-//   searchFilmBySearchBar();
-// });
+searchBar.addEventListener("input", () => {
+  searchFilmBySearchBar();
+});
