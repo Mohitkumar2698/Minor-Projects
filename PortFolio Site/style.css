@@ -32,7 +32,9 @@
     rgba(255, 255, 255, 0)
   );
 }
-
+html {
+  scroll-behavior: smooth;
+}
 • {
   margin: 0;
   padding: 0;
@@ -45,6 +47,7 @@ body {
   color: #262626;
   font-weight: 400;
   background-color: #f0ebe3;
+  /* width: 98vw; */
 }
 nav {
   padding: 0.6rem 1.2rem;
@@ -135,7 +138,7 @@ nav .icons-div p span {
   width: 40vw;
 }
 .links-div {
-  font-size: 18px;
+  font-size: 25px;
   margin-top: 1.5rem;
   display: flex;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
@@ -371,4 +374,13 @@ nav .icons-div p span {
   scale: 1.1;
   background-color: #29a587;
   color: white;
+}
+
+/* footer */
+Footer {
+  text-align: center;
+  padding: 20px;
+  background: #212529fb;
+  color: #fff;
+  margin-top: 40px;
 }
