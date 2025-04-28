@@ -69,7 +69,7 @@ i {
 /* Body */
 
 .body-div {
-  background-image: url("/Assets/amanda-vick-pPV-kqfs5wA-unsplash.jpg");
+  background-image: url("../Assets/amanda-vick-pPV-kqfs5wA-unsplash.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   height: 80vh;

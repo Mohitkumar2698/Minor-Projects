@@ -10,7 +10,7 @@ body {
   height: 100%;
   width: 100%;
   box-sizing: border-box;
-  background-image: url("/Assets/netflix\ background.jpg");
+  background-image: url("../Assets/netflix\ background.jpg");
   box-shadow: inset 100px 100px 999px 100px black,
     inset -100px -100px 999px 100px black;
 }
@@ -22,7 +22,7 @@ body {
 }
 .logo-div {
   margin-top: 1rem;
-  background-image: url("/Assets/7124274_netflix_logo_icon.png");
+  background-image: url("../Assets/7124274_netflix_logo_icon.png");
   height: 200px;
   width: 300px;
   background-size: contain;
